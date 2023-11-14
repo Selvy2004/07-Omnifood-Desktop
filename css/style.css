@@ -7,6 +7,7 @@
   align-items: center;
   background-color:#fdf2e9;
 
+  position: relative;
   /* Because we wanted to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
@@ -23,7 +24,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 1.4rem;
+  gap: 4.8rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited{
@@ -50,6 +51,27 @@
 .main-nav-link.last-link:active{
   background-color: #cf711f;
 }
+
+/* MOBILE */
+.menu-btn{
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.menu-icon{
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.menu-icon[name="close-outline"] {
+  display: none;
+}
+
+
 /********************/
 /* HERO SECTION */
 /********************/
@@ -67,11 +89,11 @@
   align-items: center;
   column-gap: 9.6rem;
 }
-.hero-img-box{
+/* .hero-img-box{
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .hero-description{
   font-size: 2rem;
   line-height: 1.6;
@@ -284,13 +306,13 @@
   border-top-left-radius: 1.1rem; */
 }
 
-
 .meal-title{
   font-size: 2.4rem;
   color:#333;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
+
 .meal-attributes{
   list-style: none;
   display: flex;
@@ -304,15 +326,13 @@
   align-items: center;
   gap: 1.6rem;
 }
+
 .icon{
   /* width: 2.4rem;
   height: 2.4rem; */
   font-size: 2.4rem;
   color:#e67e22;
 }
-
-
-
 
 .recipes-link{
   font-size: 1.8rem;
@@ -324,9 +344,11 @@
 .section-testmonials{
   background-color: #fdf2e9;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
   /* gap: 9.6rem; */
 }
+
 .testmonial-container{
   padding: 9.6rem;
 }
@@ -385,15 +407,19 @@
   padding: 9.6rem 0;
 }
 
+.pricing-plan{
+  border-radius: 11px;
+  width: 75%;
+  padding: 4.8rem;
+}
+
 .pricing-plan1{
   justify-self: end;
   border: 1px solid #fdf2e9;
-  padding: 4.6rem;
 }
 
 .pricing-plan2{
   background-color: #fdf2e9;
-  padding: 4.8rem;
   position: relative;
   overflow: hidden;
 
@@ -412,11 +438,6 @@
   top:6%;
   right: -18%;
   transform: rotate(45deg);
-}
-
-.pricing-plan{
-  border-radius: 11px;
-  width: 75%;
 }
 
 .plan-header{
@@ -563,11 +584,6 @@ margin-bottom: 4.8rem;
 
 .cta-form input::placeholder{
   color: #aaa;
-}
-
-.cta-form select{
-  /* font-family: inherit; */
-
 }
 
 /********************/

@@ -19,6 +19,7 @@
     Defalt: 1
     Large-Text: 1.05
     medium: 1.2
+    Large: 1.8
     Small-text / Medium-text: 1.6
 
 
@@ -45,6 +46,8 @@
 --- 06 border-radius
     Default: 0.9rem
     medium: 1.1rem
+
+    
 --- 07 White-space
      SPACING SYSTEM (px)
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 
@@ -56,14 +59,22 @@
       margin: 0;
       box-sizing: border-box;
     }
+
     html{
       font-size: 62.5%;
+      overflow-x: hidden;
+
     }
+
     body{
       font-family: "Rubik", sans-serif;
       font-weight: 400;
       color: #555;
       line-height: 1;
+
+      /* it works if there is nothing absolutely
+       positioned in relation to body */
+      overflow-x: hidden;
     }
     
     *:focus{
@@ -256,4 +267,5 @@
       display: flex;
       align-items: center;
       gap: 1.6rem; 
+      line-height: 1.2;
     }
