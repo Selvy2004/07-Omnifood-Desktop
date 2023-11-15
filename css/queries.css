@@ -131,6 +131,7 @@
   /* Mobile Navigation */
   .menu-btn{
     display: block;
+    z-index: 999;
   }
   
   .nav{
